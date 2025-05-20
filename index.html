@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>Music Player</title>
+</head>
+<body>
+  <div class="content">
+    <div class="top-bar">
+      <span class="material-symbols-outlined">expand_more</span>
+      <span>Now Playing</span>
+      <span class="material-symbols-outlined">more_horiz</span>
+    </div>
+    <div class="image-wrapper">
+      <div class="music-image">
+        <img src="images/image.png" />
+      </div>
+    </div>
+    <div class="music-titles">
+      <p class="name">DIL DIL PAKISTAN</p>
+      <p class="artist">JUNAID JAMSHAID</p>
+    </div>
+    <div class="progress-details">
+      <div class="progress-bar">
+        <span></span>
+      </div>
+      <div class="time">
+        <span class="current">0:00</span>
+        <span class="final">5:30</span>
+      </div>
+    </div>
+    <div class="control-btn">
+      <span class="material-symbols-outlined" id="repeat">repeat</span>
+      <span class="material-symbols-outlined">skip_previous</span>
+      <div class="play-pause">
+        <span class="material-symbols-outlined">play_arrow</span>
+      </div>
+      <span class="material-symbols-outlined" id="next">skip_next</span>
+      <span class="material-symbols-outlined" id="shuffle">shuffle</span>
+    </div>
+    <audio class="main-song"></audio>
+  </div>
+
+  <script src="playlist.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
